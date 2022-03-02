@@ -11,6 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.flex-reverse-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .headerseperator {
   height: 4em;
 }
@@ -114,6 +120,15 @@ html {
 }
 
 @media (max-width: 1000px) {
+  .flex-reverse-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .flex-reverse-hero img {
+    width: 100%;
+  }
   .hero-title-text {
     font-size: 3.25em;
   }
